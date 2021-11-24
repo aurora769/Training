@@ -81,9 +81,9 @@ SELECT ENAME,
 HIREDATE
 FROM EMP
 WHERE DEPTNO = 30;
---18. Display the hiredate in emp table formatted as ‘mm/dd/yy’.
+--18. Display the hiredate in emp table formatted as â€˜mm/dd/yyâ€™.
 select format(hiredate, 'MM-dd-yy') as 'Date' from emp;
---19. Retrieve the analysts’ record with the hiredate formatted as ‘the 3rd of Decemeber, 1984’.
+--19. Retrieve the analystsâ€™ record with the hiredate formatted as â€˜the 3rd of Decemeber, 1984â€™.
 SELECT *
 FROM EMP
 WHERE JOB = 'ANALYST' AND HIREDATE='1984-12-03';
@@ -134,7 +134,7 @@ from emp
 join
 dept
 on loc='chicago';
---28. List the employees’ names and cities in which they work. Order the list by city.select ename,
+--28. List the employeesâ€™ names and cities in which they work. Order the list by city.select ename,
 loc
 from emp e
 join dept d
