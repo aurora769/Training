@@ -1,0 +1,40 @@
+package com.sonata.AnnotationExample;
+
+@FunctionalInterface
+interface Xyz
+{
+	void display();
+}
+class Emp1 implements Xyz {
+	public void myData()
+	{
+		System.out.println("myData method");
+	}
+	@Override
+	public void display()
+	{
+		System.out.println("Show this one");
+	}
+
+}
+class EmpShow extends Emp1
+{
+	@Override()
+	public void myData()
+	{
+		System.out.println("myData Call method");
+	}
+}
+public class MarkerExample //AnnotationExample
+{
+	public static void main(String[] args)
+	{
+		EmpShow obj=new EmpShow();
+		obj.myData();
+	}
+}
+
+
+
+
+
